@@ -1,0 +1,52 @@
+:root{
+    --text: #FDF0D5;
+    --lred: #C1121F;
+    --lblue: #669BBC;
+    --dblue: #003049;
+    --dred: #780000;
+    --bg: #000000;
+    --font: "Roboto", sans-serif;
+} 
+
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    height: 100px;
+    z-index: 999;
+    animation: decima 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    background-color: var(--lred);
+
+}
+nav.cs{
+    background-color: var(--lred);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+ body{
+    font-family: var(--font);
+    background-color: var(--bg);
+    color: var(--text);
+
+}
+ section{
+    min-height: 100vh;
+    height: auto;
+ }
+
+ @keyframes decimo{
+    0%{
+        transform:translateY(-100px);
+    }
+ }
